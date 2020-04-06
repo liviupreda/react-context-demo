@@ -40,7 +40,7 @@ const words = {
 class Form extends Component {
   static contextType = LanguageContext;
   render() {
-    const { language } = this.context;
+    const { language, changeLanguage } = this.context;
     const { classes } = this.props;
     const { signIn, email, password, remember } = words[language];
     return (
@@ -50,7 +50,7 @@ class Form extends Component {
             <LockOutlinedIcon />
           </Avatar>
           <Typography variant="h5">{signIn}</Typography>
-          <Select value={language}>
+          <Select value={language} onChange={changeLanguage}>
             <MenuItem value="english">English</MenuItem>
             <MenuItem value="french">French</MenuItem>
             <MenuItem value="spanish">Spanish</MenuItem>
