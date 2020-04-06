@@ -6,10 +6,12 @@ import PageContent from "./PageContent";
 class App extends Component {
   render() {
     return (
-      <PageContent>
-        <Navbar />
-        <Form />
-      </PageContent>
+      <ThemeProvider>
+        <PageContent>
+          <Navbar />
+          <Form />
+        </PageContent>
+      </ThemeProvider>
     );
   }
 }
