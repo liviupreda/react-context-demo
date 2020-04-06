@@ -18,13 +18,22 @@ import { LanguageContext } from "./contexts/LanguageContext";
 
 const words = {
   english: {
-    email: "Email"
+    signIn: "Sign In",
+    email: "Email",
+    password: "Password",
+    remember: "Remember Me"
   },
   french: {
-    email: "Adresse Electronique"
+    signIn: "Se Connecter",
+    email: "Adresse Electronique",
+    password: "Mot de Passe",
+    remember: "Souviens-toi De Moi"
   },
   spanish: {
-    email: "Correo Electronico"
+    signIn: "Registrarse",
+    email: "Correo Electronico",
+    password: "Contrasena",
+    remember: "Reccuerdame"
   }
 };
 
